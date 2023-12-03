@@ -1,0 +1,49 @@
+.header-element {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#header-img{
+    width: 100%;
+}
+
+#header{
+    background: transparent;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 2
+}
+
+#header #back {
+    color: white;
+    text-shadow: 2px 2px 6px gray;
+    font-size: 35px;
+    text-align: center;
+}
+
+#header #logo {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#header-right {
+    display: flex;
+    justify-content: end;
+}
+
+#header-left{
+    display: flex;
+}
+
+#header img {
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+}

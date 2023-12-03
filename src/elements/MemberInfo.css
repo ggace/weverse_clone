@@ -1,0 +1,26 @@
+#artist-info #member_count{
+    font-size: 15px;
+}
+
+#artist-info {
+    background: linear-gradient(to bottom, #EDEDED, gray, #EDEDED);
+    color: white;
+    margin-top: -4.5px;
+    padding-bottom: 20px;
+}
+
+#artist-info h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    font-weight: 900;
+}
+
+#notice {
+    font-size: 10px;
+}
+
+.page:has(.top-stuck) #member-info{
+    display: none;
+    visibility: hidden;
+}

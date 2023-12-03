@@ -1,0 +1,44 @@
+#artist-reply {
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    font-size: 15px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#artist-reply-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #D7D7D7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#artist{
+    position: absolute;
+    left: 13%;
+    top: -5px;
+}
+
+#artist img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+}
+
+#artist #artist-name {
+    font-size: 10px;
+}
+
+.page:has(.top-stuck) #artist-reply-wrapper{
+    display: none;
+    visibility: hidden;
+}

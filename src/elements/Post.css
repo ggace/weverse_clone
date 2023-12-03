@@ -1,0 +1,42 @@
+#post #profile-img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+}
+
+#post p {
+    text-align: start;
+    margin-left: 10px;
+}
+
+#post #profile-name {
+    font-size: 15px;
+}
+
+#post #post-date {
+    font-size: 15px;
+    color: gray;
+}
+
+#post {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 1px solid #EDEDED;
+    padding: 20px;
+    flex-direction: column;
+    white-space: pre-wrap;
+}
+
+#post #post-content {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#post #interaction div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
