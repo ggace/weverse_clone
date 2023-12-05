@@ -1,8 +1,8 @@
 import './Bar.css'
 
-import {PAGES} from './../data/page.js'
-import {current_page} from '../data/page.js'
-import setCurrentPage from '../data/page.js'
+import {VIEWS} from './../data/view.js'
+import {current_view} from '../data/view.js'
+import setCurrentView from '../data/view.js'
 
 import {useState} from "react"
 
@@ -14,7 +14,7 @@ function Bar(props){
     let [classes, changeClass] = useState(["a", "a", "a", "a"]);
     let [stucked, changeStucked] = useState([""]);
 
-    function setBarClass(current_page, PAGES){
+    function setBarClass(current_view, VIEWS){
 
         classes[0] = "";
         classes[1] = "";
@@ -22,16 +22,16 @@ function Bar(props){
         classes[3] = "";
 
         
-        if(current_page == PAGES.FEED){
+        if(current_view == VIEWS.FEED){
             classes[0] = "current"
         }
-        else if(current_page == PAGES.ARTIST){
+        else if(current_view == VIEWS.ARTIST){
             classes[1] = "current"
         }
-        else if(current_page == PAGES.MEDIA){
+        else if(current_view == VIEWS.MEDIA){
             classes[2] = "current"
         }
-        else if(current_page == PAGES.LIVE){
+        else if(current_view == VIEWS.LIVE){
             classes[3] = "current"
         }
 
@@ -41,7 +41,7 @@ function Bar(props){
     }
 
     function setStucked() {
-        if(current_page != PAGES.FEED){
+        if(current_view != VIEWS.FEED){
             stucked[0] = "top-stuck"
         }
         else{
@@ -50,16 +50,16 @@ function Bar(props){
         changeStucked([...stucked])
     }
 
-    function setPage(page){
-        setCurrentPage(page)
+    function setView(view){
+        setCurrentView(view)
         setStucked();
-        setBarClass(page, PAGES)
+        setBarClass(view, VIEWS)
 
         changeClass([...classes])
-        temp["current_page"] = page
+        temp["current_view"] = view
     }
 
-    setBarClass(current_page, PAGES);
+    setBarClass(current_view, VIEWS);
 
     
     
@@ -68,10 +68,10 @@ function Bar(props){
     return (
         <section id="bar-wrapper" className={"sticky " + stucked} style={{'display': 'flex', "justifyContent": 'center'}}>
             <div id="bar" >
-                <span onClick={() => setPage(PAGES.FEED)} className={"bar-element "+ classes[0]}>Feed</span>
-                <span onClick={() => setPage(PAGES.ARTIST)} className={"bar-element "+ classes[1]}>Artist</span>
-                <span onClick={() => setPage(PAGES.MEDIA)} className={"bar-element "+ classes[2]}>Media</span>
-                <span onClick={() => setPage(PAGES.LIVE)} className={"bar-element "+ classes[3]}>LIVE</span>
+                <span onClick={() => setView(VIEWS.FEED)} className={"bar-element "+ classes[0]}>Feed</span>
+                <span onClick={() => setView(VIEWS.ARTIST)} className={"bar-element "+ classes[1]}>Artist</span>
+                <span onClick={() => setView(VIEWS.MEDIA)} className={"bar-element "+ classes[2]}>Media</span>
+                <span onClick={() => setView(VIEWS.LIVE)} className={"bar-element "+ classes[3]}>LIVE</span>
             </div>
 
 

@@ -1,7 +1,6 @@
 import getParam from '../source/getParam.js'
 
 import ReactDomServer from 'react-dom/server';
-import { Navigate } from 'react-router-dom';
 
 function DetailPage() {
 
@@ -32,7 +31,7 @@ function DetailPage() {
     })
 
     return (<div id="page">
-        <div id="header" style={{"padding": "30px", "backgroundColor": "white", "width": "calc(100% - 60px)"}}>
+        <div id="header" style={{"paddingLeft": "10px", "paddingRight": "10px", "paddingTop": "10px", "paddingBottom": "10px", "backgroundColor": "white", "width": "calc(100% - 20px)"}}>
             <div  id="header-left">
                 <div className="header-element" onClick={()=>window.location.replace("./")}>&lt;</div>
                 <div className="header-element">포스트</div>

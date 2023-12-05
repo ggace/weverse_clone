@@ -115,3 +115,7 @@
     border-radius: 50%;
 
 }
+
+input {
+    outline: 0;
+}

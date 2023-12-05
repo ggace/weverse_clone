@@ -1,0 +1,12 @@
+#textInput {
+    width: calc(100% - 40px);
+    padding: 20px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    height: 90vh
+}
+
+#register {
+    color: gray;
+}

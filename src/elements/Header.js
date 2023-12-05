@@ -5,7 +5,7 @@ function Header(){
   return (
       <section id="header">
         <section id="header-left">
-          <div className="header-element" id="back">&lt;</div>
+          <div className="header-element" id="back" onClick={()=> window.history.back()}>&lt;</div>
         </section>
         
         <section id="header-right">
